@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_logo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.liantai.ui.LogoActivity">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/ic_logo"/>
+
+    <EditText android:id="@+id/edt_username"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:background="#000"
+        android:textColorHint="#fff"
+        android:hint="@string/login_username"
+        android:drawableLeft="@drawable/ic_person"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="200dp" />
+
+    <EditText android:id="@+id/edt_password"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:background="#000"
+        android:textColorHint="#fff"
+        android:hint="@string/login_password"
+        android:drawableLeft="@drawable/ic_lock"
+        android:textColor="@color/white"
+        android:layout_alignTop="@+id/edt_username"
+        android:layout_alignLeft="@+id/edt_username"
+        android:layout_alignStart="@+id/edt_username"
+        android:layout_marginTop="50dp" />
+
+    <Button android:id="@+id/btn_login"
+        android:layout_width="280dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/edt_password"
+        android:layout_alignLeft="@+id/edt_password"
+        android:layout_alignStart="@+id/edt_password"
+        android:layout_marginTop="12dp"
+        android:text="@string/btn_login"
+        android:background="@drawable/btn_select"
+        android:textSize="20sp"/>
+</RelativeLayout>

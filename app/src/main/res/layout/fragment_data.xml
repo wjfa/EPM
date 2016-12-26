@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    //TabLayout：第三方的库design：NavigationView自带的布局，实现上方选择框的效果,滑动ViewPager时进行联动的效果
+    //app:tabTextAppearance:设置标题的字体
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#20243D"
+        app:tabTextColor="#FCC008"
+        app:tabIndicatorHeight="4dp"
+        app:tabIndicatorColor="#b00"
+        app:tabTextAppearance="@style/AppTheme_design_data"
+        app:tabSelectedTextColor="#f44"
+        app:tabMode="scrollable"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#30243D">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+</LinearLayout>

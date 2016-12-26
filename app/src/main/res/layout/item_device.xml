@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:orientation="vertical"
+    android:layout_marginBottom="20dp">
+    <LinearLayout
+        android:id="@+id/linear_device"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:src="@drawable/ic_item_pic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+
+        <TextView android:id="@+id/tv_sla_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:text="SLA test"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:drawableRight="@drawable/ic_right"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#708090"
+        android:layout_marginBottom="15dp"/>
+
+    <include layout="@layout/layout_device_resttime_"/>
+
+
+    <ProgressBar android:id="@+id/item_progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="15dp"
+        android:max="1024"
+        android:progress="500"
+        android:progressDrawable="@drawable/progress_device"
+       />
+
+    <include layout="@layout/layout_device_progress"/>
+
+    <Button android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:text="设备状态：准备就绪"
+        android:background="#8956A1"/>
+
+</LinearLayout>

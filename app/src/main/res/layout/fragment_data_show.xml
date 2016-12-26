@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#30243D"
+    android:paddingTop="8dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp">
+
+    <LinearLayout
+        android:id="@+id/linear_data_show1"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/user_shape"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linear_show1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+           >
+            <TextView
+                android:text="起始时间："
+                android:textSize="20sp"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:id="@+id/tv_show_start"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"/>
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:id="@+id/spinner_start"
+                android:layout_weight="2"
+                android:spinnerMode="dropdown"
+                android:layout_marginRight="80dp"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_show2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:text="结束时间："
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:id="@+id/tv_show_stop"
+                android:layout_weight="5"
+                android:layout_marginLeft="20dp"/>
+
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:id="@+id/spinner_stop"
+                android:layout_weight="8"
+                android:spinnerMode="dropdown"
+                android:layout_marginRight="10dp"
+                android:focusable="true"/>
+
+            <TextView
+                android:text="分析"
+                android:textSize="20sp"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:id="@+id/tv_analyze"
+                android:background="#5F52A1"
+                android:layout_weight="0"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="20dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:orientation="vertical"
+        android:background="@drawable/user_shape">
+        <TextView
+        android:text="使用率(/小时)"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="#3F51B5"
+        android:id="@+id/tv_data1" />
+        <TextView
+            android:text="48"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/tv_data2" />
+        <TextView
+            android:text="40"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/tv_data3" />
+        <TextView
+            android:text="32"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/tv_data4" />
+        <TextView
+            android:text="24"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/tv_data5" />
+        <TextView
+            android:text="16"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/tv_data6" />
+        <TextView
+            android:text="8"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/tv_data7" />
+        <TextView
+            android:text="0"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/tv_data8" />
+
+        <TextView
+            android:text="--------------------------------------------------------------"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:id="@+id/tv_data9" />
+        <TextView
+            android:text="设备名"
+            android:textSize="23sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:gravity="center_horizontal"
+            android:id="@+id/tv_data10" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

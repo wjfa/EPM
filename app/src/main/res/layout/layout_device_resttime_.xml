@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/device1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView android:id="@+id/tv_runtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打印时间："
+            android:textColor="@color/black"
+            style="@style/textsize"
+            />
+
+        <TextView android:id="@+id/tv_runtime_nb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00:00"
+            android:textColor="#398BFB"
+            android:layout_toRightOf="@+id/tv_runtime"
+            style="@style/textsize"/>
+
+        <TextView android:id="@+id/tv_yewei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="液位:"
+            android:textColor="@color/black"
+            style="@style/textsize"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/tv_runtime_nb"/>
+
+        <TextView android:id="@+id/tv_yewei_nb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100mm"
+            android:textColor="#398BFB"
+            style="@style/textsize"
+            android:layout_toRightOf="@+id/tv_yewei"/>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/device2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+
+    <TextView android:id="@+id/tv_resttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="剩余时间："
+        style="@style/textsize"
+        android:textColor="@color/black" />
+
+    <TextView android:id="@+id/tv_resttime_nb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textColor="#398BFB"
+        android:layout_toRightOf="@+id/tv_resttime"
+        style="@style/textsize"/>
+
+    <TextView android:id="@+id/tv_power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="功率:"
+        android:textColor="@color/black"
+        style="@style/textsize"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/tv_resttime_nb"/>
+
+<TextView android:id="@+id/tv_yewei_nb"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="100mw"
+    android:textColor="#398BFB"
+    style="@style/textsize"
+    android:layout_toRightOf="@+id/tv_power"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#708090"
+        android:layout_marginBottom="15dp"/>
+
+<LinearLayout
+    android:id="@+id/device3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp">
+
+
+
+    <TextView android:id="@+id/tv_printheight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="打印当前高度"
+        android:textColor="@color/black"
+        style="@style/textsize"/>
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="21dp"
+        android:layout_marginLeft="15dp"
+        android:background="#398BFB"/>
+
+    <TextView android:id="@+id/tv_allheight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="总高度"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/black"
+        style="@style/textsize"/>
+
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="21dp"
+        android:layout_marginLeft="15dp"
+        android:background="#708090"/>
+</LinearLayout>
+
+    </LinearLayout>

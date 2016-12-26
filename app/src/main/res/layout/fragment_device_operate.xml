@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:background="#30243D">
+
+
+    <LinearLayout
+        android:id="@+id/linear_kiting_show"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/user_shape"
+        android:orientation="vertical"
+        android:layout_marginTop="6dp">
+
+        <LinearLayout
+            android:id="@+id/linear_kiting_show1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:text="生成时间："
+                android:textSize="20sp"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:id="@+id/tv_show_create"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"/>
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:id="@+id/spinner_create"
+                android:layout_weight="2"
+                android:spinnerMode="dropdown"
+                android:layout_marginRight="80dp"
+                android:focusable="true" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_kiting_show2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:text="截止时间："
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:id="@+id/tv_show_end"
+                android:layout_weight="5"
+                android:layout_marginLeft="20dp"/>
+
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:id="@+id/spinner_end"
+                android:layout_weight="8"
+                android:spinnerMode="dropdown"
+                android:layout_marginRight="10dp"
+                android:focusable="true"/>
+
+            <TextView
+                android:text="查看"
+                android:textSize="20sp"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:id="@+id/tv_like"
+                android:background="#5F52A1"
+                android:layout_weight="0"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="ListView,待实现"
+        android:textSize="38sp"
+        android:background="#dd2"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

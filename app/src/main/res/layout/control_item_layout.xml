@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView android:id="@+id/img_control_start"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/control_start"/>
+
+        <ImageView android:id="@+id/img_control_suspended"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="200dp"
+            android:src="@drawable/control_suspended"/>
+
+        <TextView android:id="@+id/tv_control_start"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="开始打印"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/img_control_start"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            />
+
+        <TextView android:id="@+id/tv_control_suspended"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="暂停打印"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="200dp"
+            android:layout_below="@+id/img_control_start"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView android:id="@+id/img_control_stop"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/control_stop"/>
+
+        <ImageView android:id="@+id/img_control_simulation"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="200dp"
+            android:src="@drawable/control_simulation"/>
+
+
+        <TextView android:id="@+id/tv_control_stop"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="停止打印"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/img_control_stop"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            />
+
+        <TextView android:id="@+id/tv_control_simulation"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="模拟打印"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="200dp"
+            android:layout_below="@+id/img_control_stop"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

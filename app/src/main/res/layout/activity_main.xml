@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.liantai.ui.MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/main_framelayout"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView android:id="@+id/tv_device"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/sel_my_device"
+            android:text="我的设备"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <TextView android:id="@+id/tv_data"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/sel_data"
+            android:text="数据统计"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <TextView android:id="@+id/tv_msg"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/sel_message"
+            android:text="消息"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tv_user"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawableTop="@drawable/sel_user"
+            android:text="我的账户"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+</LinearLayout>
