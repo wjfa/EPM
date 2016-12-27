@@ -1,4 +1,4 @@
-package com.liantai.ui.fragment;
+package com.liantai.ui.fragment.message;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -13,13 +13,12 @@ import com.liantai.ui.R;
  * Created by Administrator on 2016/12/19.
  */
 
-public class UserFragmenyt extends Fragment {
-    private View mView;
+public class MessageFragment extends Fragment{
+   private View mView;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        mView=inflater.inflate(R.layout.fragment_user,container,false);
-
+        mView=inflater.inflate(R.layout.fragment_message,container,false);
         return mView;
     }
 }

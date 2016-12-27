@@ -24,21 +24,26 @@
            >
             <TextView
                 android:text="起始时间："
-                android:textSize="20sp"
-                android:layout_width="30dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:id="@+id/tv_show_start"
                 android:layout_weight="1"
+                android:gravity="center_vertical"
                 android:layout_marginLeft="20dp"/>
 
-            <Spinner
-                android:layout_width="0dp"
+            <TextView
+                android:text=""
+                android:textSize="16sp"
+                android:layout_width="30dp"
                 android:layout_height="40dp"
-                android:id="@+id/spinner_start"
-                android:layout_weight="2"
-                android:spinnerMode="dropdown"
-                android:layout_marginRight="80dp"
-                android:focusable="true" />
+                android:id="@+id/tv_show_start_time"
+                android:layout_weight="15"
+                android:drawableRight="@drawable/ic_down"
+                android:background="@drawable/shape_time"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="80dp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -49,26 +54,32 @@
             android:orientation="horizontal">
             <TextView
                 android:text="结束时间："
-                android:textSize="20sp"
-                android:layout_width="0dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
                 android:layout_height="40dp"
                 android:id="@+id/tv_show_stop"
-                android:layout_weight="5"
+                android:layout_weight="1"
                 android:layout_marginLeft="20dp"/>
 
 
-            <Spinner
-                android:layout_width="0dp"
+
+            <TextView
+                android:text=""
+                android:textSize="16sp"
+                android:layout_width="30dp"
                 android:layout_height="40dp"
-                android:id="@+id/spinner_stop"
-                android:layout_weight="8"
-                android:spinnerMode="dropdown"
+                android:id="@+id/tv_show_stop_time"
+                android:layout_weight="15"
+                android:drawableRight="@drawable/ic_down"
+                android:background="@drawable/shape_time"
+                android:gravity="center_vertical"
                 android:layout_marginRight="10dp"
-                android:focusable="true"/>
+                android:layout_marginLeft="2dp" />
 
             <TextView
                 android:text="分析"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:layout_width="50dp"
                 android:layout_height="30dp"
                 android:gravity="center"

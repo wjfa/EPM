@@ -2,8 +2,8 @@
     <string name="app_name">EPM</string>
 
 
-    <string name="login_username">请输入用户名</string>
-    <string name="login_password">请输入密码</string>
+    <string name="login_username">  请输入用户名</string>
+    <string name="login_password">  请输入密码</string>
     <string name="btn_login">登陆</string>
 
 
@@ -51,6 +51,9 @@
     <string name="Equipment_operation_records">设备操作记录</string>
     <string name="error_message">错误信息</string>
     <string name="check_printqueue">查看打印队列</string>
+
+    <string name="tv_printoperation">点击选择打印任务，可对队列中打印任务做如下操作</string>
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

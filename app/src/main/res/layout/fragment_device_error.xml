@@ -6,7 +6,7 @@
     <TextView
         android:layout_marginTop="10dp"
         android:text="错误信息页面,ListView,待实现"
-        android:textSize="38sp"
+        android:textSize="25sp"
         android:background="#dd2"
         android:gravity="center"
         android:layout_width="match_parent"

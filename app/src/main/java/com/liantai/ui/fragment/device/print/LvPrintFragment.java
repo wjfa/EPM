@@ -1,4 +1,4 @@
-package layout;
+package com.liantai.ui.fragment.device.print;
 
 
 import android.os.Bundle;
@@ -12,10 +12,11 @@ import com.liantai.ui.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class StateFragment extends Fragment {
+public class LvPrintFragment extends Fragment {
+    private View view;
 
 
-    public StateFragment() {
+    public LvPrintFragment() {
         // Required empty public constructor
     }
 
@@ -23,8 +24,8 @@ public class StateFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_state, container, false);
+        view = inflater.inflate(R.layout.fragment_lv_print, container,false);
+        return view;
     }
 
 }

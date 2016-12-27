@@ -13,6 +13,7 @@
         android:layout_height="60dp"
         android:gravity="center_vertical"
         android:layout_marginTop="5dp"
+        android:background="@drawable/selector_color_device"
         android:orientation="horizontal">
 
         <ImageView

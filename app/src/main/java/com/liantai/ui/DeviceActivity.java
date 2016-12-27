@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import com.liantai.ui.fragment.device.details.DetailsFragment;
 import com.liantai.ui.fragment.device.order.OrderFragment;
+import com.liantai.ui.fragment.device.print.PrintqueueFragment;
 import com.liantai.ui.fragment.device.state.StatusFragment;
 
 import butterknife.BindViews;
@@ -16,12 +17,13 @@ import butterknife.OnClick;
 
 public class DeviceActivity extends AppCompatActivity {
 
-    @BindViews({R.id.tv_device_state,R.id.tv_device_order,R.id.tv_device_details})
+    @BindViews({R.id.tv_device_state,R.id.tv_device_order,R.id.tv_device_details,R.id.tv_device_print})
     TextView[] mTextView;
 
     private OrderFragment orderFragment;//设备状态
     private StatusFragment statusFragment;//订单
     private DetailsFragment detailsFragment;//设备详情
+    private PrintqueueFragment printqueueFragment;//打印队列
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +36,7 @@ public class DeviceActivity extends AppCompatActivity {
         replaceFragment(statusFragment);
     }
 
-    @OnClick({R.id.tv_device_state, R.id.tv_device_order, R.id.tv_device_details})
+    @OnClick({R.id.tv_device_state, R.id.tv_device_order, R.id.tv_device_details,R.id.tv_device_print})
     public void onClick(View view) {
         //设置未点击状态为正常颜色效果
         for (int i = 0; i <mTextView.length ; i++) {
@@ -56,6 +58,11 @@ public class DeviceActivity extends AppCompatActivity {
                 mTextView[2].setSelected(true);
                 detailsFragment=new DetailsFragment();
                 replaceFragment(detailsFragment);
+                break;
+            case R.id.tv_device_print://打印列队
+                mTextView[3].setSelected(true);
+                printqueueFragment = new PrintqueueFragment();
+                replaceFragment(printqueueFragment);
                 break;
 
         }

@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="layout.StateFragment">
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -148,24 +147,13 @@
 
             </LinearLayout>
 
+
             <View
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:background="@drawable/bg_anim"/>
+                android:layout_height="10dp"
+                android:background="@color/darkgray"/>
 
             <include layout="@layout/control_item_layout"/>
-
-            <TextView
-                style="@style/tv_Theme_style"
-                android:text="@string/liquid_height"/>
-
-            <include layout="@layout/liquid_height_layout"/>
-
-            <TextView
-                style="@style/tv_Theme_style"
-                android:text="@string/power_size"/>
-
-            <include layout="@layout/power_size_layout"/>
 
             <View
                 android:layout_width="match_parent"

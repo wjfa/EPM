@@ -7,9 +7,9 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.liantai.ui.fragment.DeviceFragment;
-import com.liantai.ui.fragment.MessageFragment;
-import com.liantai.ui.fragment.UserFragmenyt;
 import com.liantai.ui.fragment.data.DataFragment;
+import com.liantai.ui.fragment.message.MessageFragment;
+import com.liantai.ui.fragment.user.UserFragment;
 
 import butterknife.BindViews;
 import butterknife.ButterKnife;
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private DeviceFragment deviceFragment;//我的设备页面
     private DataFragment dataFragment;//数据统计页面
     private MessageFragment messageFragment;//消息页面
-    private UserFragmenyt userFragmenyt;//我的用户页面
+    private UserFragment userFragmenyt;//我的用户页面
 
 
     @Override
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.tv_user:
                 //  TODO: 2016/12/19 跳转到“我的用户”，待实现
                 textViews[3].setSelected(true);//设置每个控件的选择器按钮
-                userFragmenyt = new UserFragmenyt();
+                userFragmenyt = new UserFragment();
                 replaceFragment(userFragmenyt);
                 break;
         }

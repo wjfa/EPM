@@ -11,7 +11,7 @@
     //实现效果
     <TextView
         android:text="消息功能待实现"
-        android:textSize="50sp"
+        android:textSize="28sp"
         android:gravity="center_horizontal|center_vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

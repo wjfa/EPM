@@ -11,16 +11,16 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-        <ImageView android:id="@+id/img_control_start"
+        <Button android:id="@+id/btn_control_start"
             android:layout_width="90dp"
             android:layout_height="90dp"
-            android:src="@drawable/control_start"/>
+            android:background="@drawable/sel_ctrl_start"/>
 
-        <ImageView android:id="@+id/img_control_suspended"
+        <Button android:id="@+id/btn_control_suspended"
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:layout_marginLeft="200dp"
-            android:src="@drawable/control_suspended"/>
+            android:background="@drawable/sel_ctrl_suspend"/>
 
         <TextView android:id="@+id/tv_control_start"
             android:layout_width="90dp"
@@ -28,7 +28,7 @@
             android:text="开始打印"
             android:gravity="center"
             android:layout_marginTop="3dp"
-            android:layout_below="@+id/img_control_start"
+            android:layout_below="@+id/btn_control_start"
             android:textColor="@color/black"
             android:textSize="18sp"
             />
@@ -40,7 +40,7 @@
             android:gravity="center"
             android:layout_marginTop="3dp"
             android:layout_marginLeft="200dp"
-            android:layout_below="@+id/img_control_start"
+            android:layout_below="@+id/btn_control_start"
             android:textColor="@color/black"
             android:textSize="18sp"/>
 
@@ -56,16 +56,16 @@
         android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
-        <ImageView android:id="@+id/img_control_stop"
+        <Button android:id="@+id/btn_control_stop"
             android:layout_width="90dp"
             android:layout_height="90dp"
-            android:src="@drawable/control_stop"/>
+            android:background="@drawable/sel_ctrl_stop"/>
 
-        <ImageView android:id="@+id/img_control_simulation"
+        <Button android:id="@+id/btn_control_simulation"
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:layout_marginLeft="200dp"
-            android:src="@drawable/control_simulation"/>
+            android:background="@drawable/sel_ctrl_silumation"/>
 
 
         <TextView android:id="@+id/tv_control_stop"
@@ -74,7 +74,7 @@
             android:text="停止打印"
             android:gravity="center"
             android:layout_marginTop="3dp"
-            android:layout_below="@+id/img_control_stop"
+            android:layout_below="@+id/btn_control_stop"
             android:textColor="@color/black"
             android:textSize="18sp"
             />
@@ -86,7 +86,7 @@
             android:gravity="center"
             android:layout_marginTop="3dp"
             android:layout_marginLeft="200dp"
-            android:layout_below="@+id/img_control_stop"
+            android:layout_below="@+id/btn_control_simulation"
             android:textColor="@color/black"
             android:textSize="18sp"
             />

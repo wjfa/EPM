@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView android:id="@+id/img_3d_print"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_3d"
+        />
+
+    <TextView android:id="@+id/tv_nbprint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SLA_text队列中共有2个打印任务"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:layout_alignTop="@+id/img_3d_print"
+        android:layout_toRightOf="@+id/img_3d_print"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="31dp" />
+
+    <TextView android:id="@+id/tv_printing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:text="打印中..."
+        android:textColor="@color/black"
+        android:layout_marginBottom="28dp"
+        android:layout_alignBottom="@+id/img_3d_print"
+        android:layout_alignStart="@+id/tv_nbprint" />
+
+
+</RelativeLayout>
