@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingLeft="10dp"
-    android:paddingRight="10dp"
-    android:paddingBottom="10dp"
+    android:paddingLeft="20px"
+    android:paddingRight="20px"
+    android:paddingBottom="20px"
     android:background="@color/gray">
 
     <TextView android:id="@+id/tv_order_numberses"
@@ -38,4 +38,4 @@
         android:layout_below="@+id/tv_equipment_names"
         android:layout_toRightOf="@+id/tv_order_numberses"/>
 
-</RelativeLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

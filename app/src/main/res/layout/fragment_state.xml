@@ -1,13 +1,13 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="layout.StateFragment">
+    >
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout
+        <com.zhy.autolayout.AutoLinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" >
@@ -30,28 +30,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/pink"
-                android:paddingLeft="20dp"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
+                android:paddingLeft="40px"
+                android:paddingTop="20px"
+                android:paddingBottom="20px"
                 android:text="UPS文件名:    150.cl"/>
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="5dp"
+                android:layout_height="10px"
                 android:background="@color/darkgray"/>
 
-            <LinearLayout
+            <com.zhy.autolayout.AutoLinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/lightgray"
                 android:orientation="horizontal">
 
 
-                <RelativeLayout
+                <com.zhy.autolayout.AutoRelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
+                    android:paddingTop="20px"
+                    android:paddingBottom="20px"
                     android:layout_weight="1">
 
 
@@ -59,34 +59,34 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/initialize_state"
-                        android:textSize="15sp"
+                        android:textSize="30px"
                         android:textColor="@color/white"
                         android:layout_centerHorizontal="true"
                         />
 
                     <ImageView android:id="@+id/img_light"
-                        android:layout_width="15dp"
-                        android:layout_height="15dp"
+                        android:layout_width="30px"
+                        android:layout_height="30px"
                         android:src="@drawable/ic_light"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="20px"
                         android:layout_centerHorizontal="true"
                         android:layout_below="@+id/tv_initialize_state"/>
 
-                </RelativeLayout>
+                </com.zhy.autolayout.AutoRelativeLayout>
 
                 <View
-                    android:layout_width="2dp"
+                    android:layout_width="4px"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20px"
+                    android:layout_marginBottom="20px"
                     android:background="@color/white"/>
 
 
-                <RelativeLayout
+                <com.zhy.autolayout.AutoRelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
+                    android:paddingTop="20px"
+                    android:paddingBottom="20px"
                     android:layout_weight="1">
 
 
@@ -94,7 +94,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/tv_start_time"
-                        android:textSize="15sp"
+                        android:textSize="30px"
                         android:textColor="@color/white"
                         android:layout_centerHorizontal="true"
                         />
@@ -103,25 +103,25 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="20px"
                         android:textColor="@color/white"
                         android:layout_below="@+id/tv_start_time"
                         android:text="00:00:00"/>
 
-                </RelativeLayout>
+                </com.zhy.autolayout.AutoRelativeLayout>
 
                 <View
-                    android:layout_width="2dp"
+                    android:layout_width="4px"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20px"
+                    android:layout_marginBottom="20px"
                     android:background="@color/white"/>
 
-                <RelativeLayout
+                <com.zhy.autolayout.AutoRelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
+                    android:paddingTop="20px"
+                    android:paddingBottom="20px"
                     android:layout_weight="1">
 
 
@@ -129,7 +129,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/tv_remain_time"
-                        android:textSize="15sp"
+                        android:textSize="30px"
                         android:textColor="@color/white"
                         android:layout_centerHorizontal="true"
                         />
@@ -138,37 +138,37 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="20px"
                         android:textColor="@color/white"
                         android:layout_below="@+id/tv_remain_time"
                         android:text="00:00:00"/>
 
-                </RelativeLayout>
+                </com.zhy.autolayout.AutoRelativeLayout>
 
-            </LinearLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
 
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="10dp"
+                android:layout_height="20px"
                 android:background="@color/darkgray"/>
 
             <include layout="@layout/control_item_layout"/>
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="10dp"
+                android:layout_height="20px"
                 android:background="@color/darkgray"/>
 
             <include layout="@layout/msg_status_layout"/>
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="10dp"
+                android:layout_height="20px"
                 android:background="@color/darkgray"/>
 
             <include layout="@layout/msg_lv_layout"/>
-        </LinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
     </ScrollView>
 
-</FrameLayout>
+</com.zhy.autolayout.AutoFrameLayout>

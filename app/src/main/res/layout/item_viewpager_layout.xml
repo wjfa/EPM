@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     >
     <View
         android:layout_width="match_parent"
-        android:layout_height="2dp"
+        android:layout_height="4px"
         android:background="@color/darkgray"/>
-    <LinearLayout
+    <com.zhy.autolayout.AutoLinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
 
 
-    <RelativeLayout
+    <com.zhy.autolayout.AutoRelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:padding="10dp">
+        android:padding="20px">
         <ImageView android:id="@+id/img_3d"
-            android:layout_width="120dp"
-            android:layout_height="160dp"
+            android:layout_width="240px"
+            android:layout_height="320px"
             android:src="@drawable/ic_3d"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
@@ -32,18 +32,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="导入队列"
-            android:textSize="18sp"
+            android:textSize="36px"
             android:layout_centerHorizontal="true"
             android:background="@color/green"
             android:textColor="@color/black"
-            android:layout_marginTop="5dp"
-            android:padding="3dp"
+            android:layout_marginTop="10px"
+            android:padding="6px"
             android:layout_below="@+id/img_3d" />
 
-    </RelativeLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
 
-    <RelativeLayout
-        android:layout_width="230dp"
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="460px"
         android:layout_height="wrap_content"
         android:layout_weight="0">
 
@@ -153,8 +153,8 @@
             android:layout_below="@+id/tv_order_authors"
             android:layout_toRightOf="@+id/tv_create_time"
             android:text="   "/>
-    </RelativeLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
 
-    </LinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
 
-</LinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

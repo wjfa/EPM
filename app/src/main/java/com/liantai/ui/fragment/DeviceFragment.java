@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.liantai.ui.DeviceActivity;
 import com.liantai.ui.R;
@@ -22,6 +23,11 @@ import butterknife.OnClick;
 
 public class DeviceFragment extends Fragment {
 
+    @BindView(R.id.linear_device)
+    LinearLayout mLinearText;
+    @BindView(R.id.tv_sla_name)
+    TextView tvSlaName;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -30,14 +36,8 @@ public class DeviceFragment extends Fragment {
         ButterKnife.bind(this, view);
         return view;
     }
-
-    @BindView(R.id.linear_device)
-    LinearLayout mLinearText;
-
-    @OnClick(R.id.linear_device)
+    @OnClick(R.id.tv_sla_name)
     public void onClick() {
         startActivity(new Intent(getActivity(), DeviceActivity.class));
     }
-
-
 }

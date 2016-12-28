@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     >
 
 
-    <LinearLayout
+    <com.zhy.autolayout.AutoLinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-    <RelativeLayout
+    <com.zhy.autolayout.AutoRelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         >
 
         <ImageView android:id="@+id/img_3d_print2"
-            android:layout_width="120dp"
-            android:layout_height="160dp"
+            android:layout_width="240px"
+            android:layout_height="320px"
             android:src="@drawable/ic_3d"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"/>
@@ -30,16 +30,16 @@
             android:text="已选中"
             android:layout_below="@+id/img_3d_print2"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20px"
             android:textColor="@color/black"
             android:visibility="invisible"
             />
 
-    </RelativeLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
 
 
-    <RelativeLayout
-        android:layout_width="240dp"
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="480px"
         android:layout_height="match_parent"
         android:gravity="center_vertical"
         android:layout_weight="0">
@@ -115,12 +115,12 @@
             android:layout_toRightOf="@+id/tv_print_time"
             android:text="  "/>
 
-    </RelativeLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
 
-</LinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="1dp"
+        android:layout_height="2px"
         android:background="@color/gray"/>
-</LinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

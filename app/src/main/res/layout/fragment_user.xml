@@ -1,149 +1,150 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#20243D">
 
-    <LinearLayout
-        android:layout_width="360dp"
-        android:layout_height="480dp"
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="720px"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:background="@drawable/user_shape"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp">
+        android:paddingLeft="20px"
+        android:paddingRight="20px">
 
 
-        <LinearLayout
+        <com.zhy.autolayout.AutoLinearLayout
             android:id="@+id/user1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="40px"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="100dp"
-                android:layout_height="50dp"
+                android:layout_width="200px"
+                android:layout_height="100px"
                 android:text="@string/user_username"
                 android:gravity="center_vertical|right"
-                android:textSize="22sp" />
+                android:textSize="40px" />
 
             <EditText
                 android:id="@+id/edt_username"
-                android:layout_width="220dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="10dp"
-                android:textSize="22sp"
+                android:layout_width="440px"
+                android:layout_height="100px"
+                android:layout_marginLeft="20px"
+                android:textSize="40px"
                 android:hint="请输入用户名" />
-        </LinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
 
-        <LinearLayout
+        <com.zhy.autolayout.AutoLinearLayout
             android:id="@+id/user2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20px"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="100dp"
-                android:layout_height="50dp"
+                android:layout_width="200px"
+                android:layout_height="100px"
                 android:text="@string/user_password"
                 android:gravity="center_vertical|right"
-                android:textSize="22sp" />
+                android:textSize="40px" />
 
             <EditText
                 android:id="@+id/edt_username2"
-                android:layout_width="220dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="10dp"
-                android:textSize="22sp"
+                android:layout_width="440px"
+                android:layout_height="100px"
+                android:layout_marginLeft="20px"
+                android:textSize="40px"
                 android:inputType="textPassword"
                 android:hint="请输入密码"
                 />
-        </LinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
 
-        <LinearLayout
+        <com.zhy.autolayout.AutoLinearLayout
             android:id="@+id/user3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20px"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="100dp"
-                android:layout_height="50dp"
+                android:layout_width="200px"
+                android:layout_height="100px"
                 android:text="@string/user_andpassword"
                 android:gravity="center_vertical|right"
-                android:textSize="22sp" />
+                android:textSize="40px" />
 
             <EditText
                 android:id="@+id/edt_username3"
-                android:layout_width="220dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="10dp"
-                android:textSize="22sp"
+                android:layout_width="440px"
+                android:layout_height="100px"
+                android:layout_marginLeft="20px"
+                android:textSize="40px"
                 android:hint="请确认输入密码" />
-        </LinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
 
-        <LinearLayout
+        <com.zhy.autolayout.AutoLinearLayout
             android:id="@+id/user4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20px"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="100dp"
-                android:layout_height="50dp"
+                android:layout_width="200px"
+                android:layout_height="100px"
                 android:text="@string/user_email"
                 android:gravity="center_vertical|right"
-                android:textSize="22sp" />
+                android:textSize="40px" />
 
             <EditText
                 android:id="@+id/edt_username4"
-                android:layout_width="220dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="10dp"
-                android:textSize="22sp"
+                android:layout_width="440px"
+                android:layout_height="100px"
+                android:layout_marginLeft="20px"
+                android:textSize="40px"
                 android:hint="请输入邮箱" />
-        </LinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
 
-        <LinearLayout
+        <com.zhy.autolayout.AutoLinearLayout
             android:id="@+id/user5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20px"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="100dp"
-                android:layout_height="50dp"
+                android:layout_width="200px"
+                android:layout_height="100px"
                 android:text="@string/user_tell"
                 android:gravity="center_vertical|right"
-                android:textSize="22sp" />
+                android:textSize="40px" />
 
             <EditText
                 android:id="@+id/edt_username5"
-                android:layout_width="220dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="10dp"
-                android:textSize="22sp"
+                android:layout_width="440px"
+                android:layout_height="100px"
+                android:layout_marginLeft="20px"
+                android:textSize="40px"
                 android:hint="请输入手机号" />
-        </LinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
 
         <Button
             android:text="确认修改"
-            android:textSize="25sp"
-            android:layout_marginTop="50dp"
-            android:layout_width="280dp"
+            android:textSize="50px"
+            android:layout_marginTop="60px"
+            android:layout_width="520px"
             android:layout_gravity="center_horizontal"
-            android:layout_height="60dp"
+            android:layout_height="100px"
+            android:layout_marginBottom="40px"
             android:background="@drawable/user_selector"
             android:id="@+id/btn_user_ok" />
 
-    </LinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
 
 
 
-</RelativeLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

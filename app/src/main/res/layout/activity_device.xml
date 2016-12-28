@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_device"
     android:layout_width="match_parent"
@@ -7,24 +7,25 @@
     android:orientation="vertical"
     tools:context="com.liantai.ui.DeviceActivity">
 
-    <FrameLayout
+    <com.zhy.autolayout.AutoFrameLayout
         android:id="@+id/framelayout_device"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1">
 
-    </FrameLayout>
+    </com.zhy.autolayout.AutoFrameLayout>
 
-    <LinearLayout
+    <com.zhy.autolayout.AutoLinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="8dp">
+        android:padding="6px">
 
         <TextView android:id="@+id/tv_device_state"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textSize="25px"
             android:drawableTop="@drawable/selector_device_state"
             android:text="设备状态"
             android:gravity="center"
@@ -34,6 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textSize="25px"
             android:drawableTop="@drawable/selector_device_order"
             android:text="订单"
             android:gravity="center"
@@ -43,6 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textSize="25px"
             android:drawableTop="@drawable/selector_device_details"
             android:text="设备详情"
             android:gravity="center"
@@ -52,11 +55,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textSize="25px"
             android:drawableTop="@drawable/selector_device_print"
             android:text="打印列队"
             android:gravity="center"
             android:textColor="@color/black" />
-    </LinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
 
 
-</LinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -10,16 +10,16 @@
     <android.support.design.widget.TabLayout
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="100px"
         android:background="#20243D"
         app:tabTextColor="#FCC008"
-        app:tabIndicatorHeight="4dp"
+        app:tabIndicatorHeight="4px"
         app:tabIndicatorColor="#b00"
         app:tabTextAppearance="@style/AppTheme_design_data"
         app:tabSelectedTextColor="#f44"
         app:tabMode="scrollable"/>
 
-    <RelativeLayout
+    <com.zhy.autolayout.AutoRelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#30243D">
@@ -27,6 +27,6 @@
             android:id="@+id/viewPager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
-    </RelativeLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
 
-</LinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

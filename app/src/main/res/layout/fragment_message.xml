@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -11,10 +11,10 @@
     //实现效果
     <TextView
         android:text="消息功能待实现"
-        android:textSize="28sp"
+        android:textSize="56px"
         android:gravity="center_horizontal|center_vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"/>
-</RelativeLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

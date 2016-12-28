@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-
         //设置刚进入时默认显示的页面
         textViews[0].setSelected(true);
         deviceFragment = new DeviceFragment();

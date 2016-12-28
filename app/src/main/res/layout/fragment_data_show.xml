@@ -1,188 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#30243D"
-    android:paddingTop="8dp"
-    android:paddingLeft="4dp"
-    android:paddingRight="4dp">
+    android:paddingTop="8px"
+    android:paddingLeft="5px"
+    android:paddingRight="5px">
 
-    <LinearLayout
+    <com.zhy.autolayout.AutoLinearLayout
         android:id="@+id/linear_data_show1"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="240px"
         android:background="@drawable/user_shape"
         android:orientation="vertical">
 
-        <LinearLayout
+        <com.zhy.autolayout.AutoLinearLayout
             android:id="@+id/linear_show1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30px"
            >
             <TextView
                 android:text="起始时间："
-                android:textSize="16sp"
+                android:textSize="32px"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="80px"
                 android:id="@+id/tv_show_start"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
                 android:layout_marginLeft="20dp"/>
 
             <TextView
-                android:text=""
-                android:textSize="16sp"
-                android:layout_width="30dp"
-                android:layout_height="40dp"
                 android:id="@+id/tv_show_start_time"
-                android:layout_weight="15"
-                android:drawableRight="@drawable/ic_down"
-                android:background="@drawable/shape_time"
-                android:gravity="center_vertical"
-                android:layout_marginLeft="2dp"
-                android:layout_marginRight="80dp"/>
-        </LinearLayout>
+                style="@style/tv_time_selection"
+                android:layout_marginRight="140px"/>
+        </com.zhy.autolayout.AutoLinearLayout>
 
-        <LinearLayout
+        <com.zhy.autolayout.AutoLinearLayout
             android:id="@+id/linear_show2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20px"
             android:orientation="horizontal">
             <TextView
                 android:text="结束时间："
-                android:textSize="16sp"
+                android:textSize="32px"
                 android:layout_width="wrap_content"
                 android:gravity="center_vertical"
-                android:layout_height="40dp"
+                android:layout_height="80px"
                 android:id="@+id/tv_show_stop"
                 android:layout_weight="1"
-                android:layout_marginLeft="20dp"/>
+                android:layout_marginLeft="40px"/>
 
 
 
             <TextView
-                android:text=""
-                android:textSize="16sp"
-                android:layout_width="30dp"
-                android:layout_height="40dp"
                 android:id="@+id/tv_show_stop_time"
-                android:layout_weight="15"
-                android:drawableRight="@drawable/ic_down"
-                android:background="@drawable/shape_time"
-                android:gravity="center_vertical"
-                android:layout_marginRight="10dp"
-                android:layout_marginLeft="2dp" />
+                style="@style/tv_time_selection"/>
 
             <TextView
                 android:text="分析"
-                android:textSize="16sp"
-                android:layout_width="50dp"
-                android:layout_height="30dp"
+                android:textSize="32px"
+                android:layout_width="100px"
+                android:layout_height="60px"
                 android:gravity="center"
                 android:id="@+id/tv_analyze"
                 android:background="#5F52A1"
                 android:layout_weight="0"
-                android:layout_marginLeft="0dp"
-                android:layout_marginRight="20dp"/>
+                android:layout_marginRight="24px"/>
 
 
-        </LinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
 
-    </LinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
 
-    <LinearLayout
-        android:layout_marginTop="20dp"
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginTop="40px"
         android:layout_width="match_parent"
-        android:layout_height="360dp"
+        android:layout_height="720px"
         android:orientation="vertical"
         android:background="@drawable/user_shape">
         <TextView
         android:text="使用率(/小时)"
-        android:textSize="18sp"
+        android:textSize="36px"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="100px"
         android:textColor="#3F51B5"
         android:id="@+id/tv_data1" />
         <TextView
             android:text="48"
-            android:textSize="18sp"
+            android:textSize="36px"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30px"
+            android:layout_marginLeft="40px"
             android:id="@+id/tv_data2" />
         <TextView
             android:text="40"
-            android:textSize="18sp"
+            android:textSize="36px"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30px"
+            android:layout_marginLeft="40px"
             android:id="@+id/tv_data3" />
         <TextView
             android:text="32"
-            android:textSize="18sp"
+            android:textSize="36px"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30px"
+            android:layout_marginLeft="40px"
             android:id="@+id/tv_data4" />
         <TextView
             android:text="24"
-            android:textSize="18sp"
+            android:textSize="36px"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30px"
+            android:layout_marginLeft="40px"
             android:id="@+id/tv_data5" />
         <TextView
             android:text="16"
-            android:textSize="18sp"
+            android:textSize="36px"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30px"
+            android:layout_marginLeft="40px"
             android:id="@+id/tv_data6" />
         <TextView
             android:text="8"
-            android:textSize="18sp"
+            android:textSize="36px"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30px"
+            android:layout_marginLeft="50px"
             android:id="@+id/tv_data7" />
         <TextView
             android:text="0"
-            android:textSize="18sp"
+            android:textSize="36px"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30px"
+            android:layout_marginLeft="50px"
             android:id="@+id/tv_data8" />
 
         <TextView
             android:text="--------------------------------------------------------------"
-            android:textSize="18sp"
+            android:textSize="36px"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="35dp"
+            android:layout_marginLeft="70px"
             android:id="@+id/tv_data9" />
         <TextView
             android:text="设备名"
-            android:textSize="23sp"
+            android:textSize="46px"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="35dp"
+            android:layout_marginLeft="60px"
             android:gravity="center_horizontal"
             android:id="@+id/tv_data10" />
 
-    </LinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
 
 
-</LinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>
